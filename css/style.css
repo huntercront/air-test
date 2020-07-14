@@ -1,0 +1,138 @@
+body{
+	font-family: 'Inter', sans-serif;
+	font-size: 16px;
+}
+.container{
+	width: 100%;
+	padding: 0 15px;
+	max-width: 1180px;
+	margin: 0 auto;
+	position: relative;
+}
+.c-c{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: center;
+}
+.c-s{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	align-content: center;
+}
+.header-inner,.header-cta{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.welcom-animation{
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	z-index: 0;
+}
+.welcom-title{
+	font-size: 3rem;
+	text-align: center;
+	z-index: 100;
+	max-width: 700px;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 2rem;
+}
+
+
+.title-color{
+	color: #353541;
+}
+
+
+.navigation ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+.navigation ul li a{
+	line-height: 1rem;
+	padding: 0.75rem;
+	color: #646671;
+}
+
+.header{
+	padding: 1rem 0rem;
+}
+.header-cta > * + *{
+	margin-left: 0.625rem;
+}
+.welcom{
+	background: url('../img/map-bg.svg');
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.welcom-content{
+	padding-top: 20vh;
+	padding-bottom: 40vh;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100%;
+	flex: 0 0 100%;
+	position: relative;
+	z-index: 100;
+}
+
+.login-link{
+	color: #3796F6;
+	font-weight: 700;
+}
+.solid-icon{
+	background: #3796F6;
+	border-radius: 0.25rem;
+	outline: none;
+	border: none;color: #ffffff;
+	padding:  0.625rem  1.375rem  0.625rem  0.625rem;
+	transition: 200ms ease-in;
+	transition-property: transform;
+}
+.solid-hidden{
+	padding:  0.625rem  1.375rem  0.625rem  0.625rem;
+	transition: 200ms ease-in;
+	transition-property: background;
+	border-radius: 0.25rem;
+	background: transparent;
+}
+.solid-hidden:hover{
+	color: #3796F6;
+	background: #EEF6FF;
+}
+.solid-icon:hover{
+	cursor: pointer;
+	color: #ffffff;
+	transform: translate(0,-3px);
+}
+.solid-icon:active{
+	outline: none;
+	transform: scale(0.93);
+}
+.icon{
+	width: 1.25rem;
+	height: 1.25rem;
+	flex: 0 0 1.25rem;
+	margin-right: 0.625rem;
+}
+
+.contuct-us > .icon{
+	animation: ripple 1.5s linear infinite;
+	border-radius: 20px;
+}
+@keyframes ripple {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.1), 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(255, 255, 255, 0.1), 0 0 0 40px rgba(255, 255, 255, 0.1), 0 0 0 60px rgba(255, 255, 255, 0.1), 0 0 0 80px rgba(255, 255, 255, 0);
+  }
+}
