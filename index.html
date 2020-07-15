@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;00&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./css/nulled.css">
 	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./fonts/font.css">
 	<title>Document</title>
 </head>
+
 <body>
 	<header class="header">
 		<div class="container">
@@ -23,8 +26,12 @@
 						</ul>
 					</nav>
 					<div class="header-cta">
-						<a href="#" class="login-link c-s solid-hidden"><div class="icon c-c"><img src="./img/log-in.svg" alt=""></div>log in </a>
-						<a href="#" class="get-started c-s solid-icon"><div class="icon c-c"><img src="./img/get-started.svg" alt=""></div>Get Started</a>
+						<a href="#" class="login-link c-s solid-hidden">
+							<div class="icon c-c"><span class="icon-log-in"></span></div>log in
+						</a>
+						<a href="#" class="get-started c-s solid-icon">
+							<div class="icon c-c"><span class="icon-get-started"></span></div>Get Started
+						</a>
 					</div>
 				</div>
 			</div>
@@ -34,13 +41,145 @@
 		<div class="container">
 			<div class="content welcom-content c-c">
 				<h1 class="welcom-title title-color">We make your air cargo transport simple</h1>
-				<button class="solid-icon contuct-us c-s"><div class="icon c-c"><img src="./img/contact-us.svg" alt=""></div>Contact us</button>
+				<button class="solid-icon contuct-us c-s">
+					<div class="icon c-c"><span class="icon-message"></span></div>Contact us
+				</button>
 			</div>
 			<div id="welcom-animation" class="welcom-animation">
 			</div>
 		</div>
 
 	</section>
-<script src="./js/canvas.js"></script>
+
+
+	<div class="form-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="container">
+				<div class="content">
+					<div class="form-inner">
+						<div class="form-header c-e">
+							<button class="close-form-button icon c-c">
+								<span class="icon-close"></span>
+							</button>
+						</div>
+						<div class="form-body">
+							<h2 class="like-h1 title-color">We make your air cargo transport simple</h2>
+							<div class="form-body-inner">
+							<div class="form-content">
+							<form id="form" action="submit" method="get">
+								<fieldset>
+									<legend class="title-color">Select one</legend> 
+
+									<div class="fieldset-inner">
+									<div class="form-radio">
+										<input id="Airline" type="radio" name="answer" value="Airline">
+										<label for="Airline">
+											<div class="icon c-c"><span class="icon-airline"></span></div>
+											Airline</label>
+									</div>
+
+									<div class="form-radio">
+										<input id="GSSA" type="radio" name="answer" value="GSSA">
+									
+										<label for="GSSA">
+											<div class="icon c-c"><span class="icon-globe"></span></div>
+											GSSA</label>
+									</div>
+
+
+									<div class="form-radio">
+										<input id="Freight" type="radio" name="answer" value="Freight 
+										forwarder">
+										<label for="Freight">
+											<div class="icon c-c"><span class="icon-package"></span></div>
+											Freight forwarder</label>
+									</div>
+		
+
+								<div class="form-radio">
+								<input id="Airport" type="radio" name="answer" value="Airport">
+								<label for="Airport">
+									<div class="icon c-c"><span class="icon-airport"></span></div>
+									Airport</label>
+							</div>
+
+							<div class="form-radio">
+								<input id="Press" type="radio" name="answer" value="Press">
+								<label for="Press">
+									<div class="icon c-c"><span class="icon-camera"></span></div>
+									Press</label>
+							</div>
+
+						</div>
+						</fieldset>
+
+						<div class="form-input">
+						<label for="name" class="inp">
+							<input type="text" id="name" placeholder="&nbsp;">
+							<span class="label">Full name</span>
+							
+						</label>
+					</div>
+
+					<div class="form-input">
+						<label for="email" class="inp">
+							<input type="email" id="email" placeholder="&nbsp;">
+							<span class="label">Business email</span>
+							
+						</label>
+					</div>
+
+					<div class="form-input">
+						<label for="phone" class="inp">
+							<input type="phone" id="phone" placeholder="&nbsp;">
+							<span class="label">Business phone</span>
+							
+						</label>
+					</div>
+
+					<div class="form-input">
+						<label for="Company" class="inp">
+							<input type="text" id="Company" autocomplete="false" placeholder="&nbsp;">
+							<span class="label">Company</span>
+							
+						</label>
+					</div>
+					<div class="form-textarea">
+						<label for="message" class="inp">
+							<textarea id="message" placeholder="&nbsp;" name="comment" rows="3" class="input-textarea"></textarea>
+							<span class="label">Your Message</span>
+						</label>
+				
+				</div>
+				<span class="submit-text">By submitting this form, you agree <a href="#" class="privace-link">Privacy рolicy</a></span>
+				<button type="submit" form="form" value="Submit" class="solid-icon c-s">
+					<div class="icon c-c"><span class="icon-message"></span></div>Contact us
+				</button>
+
+							</form>
+						</div>
+
+
+<div class="form-quote">
+	<div class="form-quote-inner">
+	<p class="form-quote-text title-color">“I think, in general, the air cargo industry is still pretty traditional and it’s not really embracing technology.”</p>
+	<span class="quote-author">Alexis von Hoensbroech</span>
+	<span class="quote-author-descr">Chief commercial officer,Lufthansa Cargo</span>
+</div>
+</div>
+
+					</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<script src="./js/canvas.js"></script>
+	<script async src="./js/script.js"></script>
 </body>
+
 </html>
