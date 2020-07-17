@@ -4,7 +4,7 @@
 // make planes avoid planes
 // adjustable settings
 // add random wind factors
-
+if(document.querySelector('.welcom-animation')){
 window.requestAnimFrame=function(){return window.requestAnimationFrame||window.webkitRequestAnimationFrame||window.mozRequestAnimationFrame||function(a){window.setTimeout(a,1E3/60)}}();
 
 $ = {};
@@ -85,7 +85,6 @@ $.init = function() {
 
 $.reset = function() {
 	// dimensions
-	console.log(document.querySelector('.welcom-animation').clientWidth)
   $.cw = $.c.width = document.querySelector('.welcom-animation').offsetWidth;
   $.ch = $.c.height = document.querySelector('.welcom-content').offsetHeight;
   $.dimAvg = ( $.cw + $.ch ) / 4;
@@ -324,3 +323,4 @@ $.step = function() {
 };
 
 $.init();
+}

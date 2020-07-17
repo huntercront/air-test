@@ -8,6 +8,7 @@
 	<link rel="stylesheet" href="./css/nulled.css">
 	<link rel="stylesheet" href="./css/style.css">
 	<link rel="stylesheet" href="./fonts/font.css">
+	<link rel="stylesheet" href="./css/style-all.css" media="print" async onload="this.media='all'">
 	<title>Document</title>
 </head>
 
@@ -19,19 +20,13 @@
 					<a href="#" class="site-logo">
 						<img src="./img/logo.svg" alt="">
 					</a>
-					<nav class="navigation">
-						<ul class="c-s">
-							<li><a href="#">Privacy рolicy</a></li>
-							<li><a href="#">Terms of Service</a></li>
-						</ul>
-					</nav>
 					<div class="header-cta">
 						<a href="#" class="login-link c-s solid-hidden">
 							<div class="icon c-c"><span class="icon-log-in"></span></div>log in
 						</a>
-						<a href="#" class="get-started c-s solid-icon">
-							<div class="icon c-c"><span class="icon-get-started"></span></div>Get Started
-						</a>
+						<button class="solid-icon contuct-us c-s">
+							<div class="icon c-c"><span class="icon-message"></span></div>Contact us
+						</button>
 					</div>
 				</div>
 			</div>
@@ -40,17 +35,30 @@
 	<section class="welcom">
 		<div class="container">
 			<div class="content welcom-content c-c">
-				<h1 class="welcom-title title-color">We make your air cargo transport simple</h1>
-				<button class="solid-icon contuct-us c-s">
-					<div class="icon c-c"><span class="icon-message"></span></div>Contact us
-				</button>
+				<h3 class="sub-title">Cargobooking365.com</h3>
+				<h1 class="welcom-title title-color">Making Air Cargo Booking Instant and Simple</h1>
+				<a href="#" class="get-started c-s solid-icon animated-icon">
+					<div class="icon c-c"><span class="icon-get-started"></span></div>Get Started
+				</a>
+
 			</div>
 			<div id="welcom-animation" class="welcom-animation">
 			</div>
 		</div>
 
 	</section>
-
+<footer class="footer">
+	<div class="container">
+		<div class="content">
+			<div class="footer-links">
+				<ul class="c-s">
+					<li><a href="../pp.html">Privacy рolicy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
 
 	<div class="form-modal">
 		<div class="modal-dialog">
@@ -64,7 +72,8 @@
 							</button>
 						</div>
 						<div class="form-body">
-							<h2 class="like-h1 title-color">We make your air cargo transport simple</h2>
+							<h3 class="sub-title">Cargobooking365.com</h3>
+							<h2 class="like-h1 title-color modal-title">We make your air cargo transport simple</h2>
 							<div class="form-body-inner">
 							<div class="form-content">
 							<form id="form" action="submit" method="get">
@@ -73,7 +82,7 @@
 
 									<div class="fieldset-inner">
 									<div class="form-radio">
-										<input id="Airline" type="radio" name="answer" value="Airline">
+										<input id="Airline" type="radio" name="answer" value="Airline" required>
 										<label for="Airline">
 											<div class="icon c-c"><span class="icon-airline"></span></div>
 											Airline</label>
@@ -116,7 +125,7 @@
 
 						<div class="form-input">
 						<label for="name" class="inp">
-							<input type="text" id="name" placeholder="&nbsp;">
+							<input type="text" id="name" placeholder=" " required value="" >
 							<span class="label">Full name</span>
 							
 						</label>
@@ -124,7 +133,7 @@
 
 					<div class="form-input">
 						<label for="email" class="inp">
-							<input type="email" id="email" placeholder="&nbsp;">
+							<input type="email" id="email" placeholder=" " required value="">
 							<span class="label">Business email</span>
 							
 						</label>
@@ -132,7 +141,7 @@
 
 					<div class="form-input">
 						<label for="phone" class="inp">
-							<input type="phone" id="phone" placeholder="&nbsp;">
+							<input type="phone" id="phone" placeholder=" " required value="">
 							<span class="label">Business phone</span>
 							
 						</label>
@@ -140,19 +149,21 @@
 
 					<div class="form-input">
 						<label for="Company" class="inp">
-							<input type="text" id="Company" autocomplete="false" placeholder="&nbsp;">
+							<input type="text" id="Company" autocomplete="false" placeholder=" " required value="">
 							<span class="label">Company</span>
 							
 						</label>
 					</div>
 					<div class="form-textarea">
 						<label for="message" class="inp">
-							<textarea id="message" placeholder="&nbsp;" name="comment" rows="3" class="input-textarea"></textarea>
+							<textarea id="message" placeholder=" " name="message" rows="3" class="input-textarea" value=""></textarea>
 							<span class="label">Your Message</span>
 						</label>
 				
 				</div>
-				<span class="submit-text">By submitting this form, you agree <a href="#" class="privace-link">Privacy рolicy</a></span>
+				<span class="submit-text">By submitting this form, you agree <a href="./pp.html" class="inline-link">Privacy рolicy</a></span>
+
+				
 				<button type="submit" form="form" value="Submit" class="solid-icon c-s">
 					<div class="icon c-c"><span class="icon-message"></span></div>Contact us
 				</button>
@@ -160,14 +171,6 @@
 							</form>
 						</div>
 
-
-<div class="form-quote">
-	<div class="form-quote-inner">
-	<p class="form-quote-text title-color">“I think, in general, the air cargo industry is still pretty traditional and it’s not really embracing technology.”</p>
-	<span class="quote-author">Alexis von Hoensbroech</span>
-	<span class="quote-author-descr">Chief commercial officer,Lufthansa Cargo</span>
-</div>
-</div>
 
 					</div>
 						</div>
@@ -178,8 +181,11 @@
 		</div>
 	</div>
 
+
+<div class="cookies-outer"></div>
 	<script src="./js/canvas.js"></script>
 	<script async src="./js/script.js"></script>
+	<script async src="./js/cookies.js"></script>
 </body>
 
 </html>

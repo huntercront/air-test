@@ -1,0 +1,97 @@
+.pp-inner h1{
+	font-size: 3rem;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+.pp-inner h2{
+	font-size: 2rem;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-bottom: 2rem;
+	color: #353541;
+	margin-top: 4rem;
+}
+.upper-subtitle{
+	text-transform: uppercase;
+	color: #3796F6;
+}
+.pp-inner h3{
+	font-size: 1.5rem;
+	line-height: 1.2;
+	font-weight: 700;
+	margin-top: 2rem;
+	margin-bottom: 1.5rem;
+	color: #353541;
+}
+.pp-inner .description{
+	font-size: 1.2rem;
+	margin-bottom: 2rem;
+	margin-top: 1rem;
+}
+.pp-inner p.small-descr{
+font-size: 0.9rem;
+color: #646671;
+margin-bottom: 0;
+margin-top: 0.125rem;
+}
+.pp-hero{
+	max-width: 1280px;
+	background: #EEF6FF;
+	border-radius: 1.5rem;
+	margin: 0 auto;
+	padding-top: 2.5rem;
+	padding-bottom: 4rem;
+	margin-bottom: 3rem;
+}
+.pp-inner{
+	max-width: 780px;
+	flex: 0 0 100%;
+	width: 100%;
+	margin: 0 auto;
+}
+.pp-inner p{
+	font-weight: 400;
+	color: #6D6F70;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+	font-size: 1rem;
+}
+.pp-inner ul{
+	list-style: none;
+	padding-left: 2.5rem;
+	color: #6D6F70;
+}
+.pp-inner ul > li{
+	position: relative;
+	margin: 0.75rem 0;
+}
+.pp-inner ul > li:after{
+	content: '';
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 0.5rem;
+	background: #3796F6;
+	position: absolute;
+	top: 0.525rem;
+	left: -1.375rem;
+}
+.pp-inner strong{
+	font-weight: 600;
+}
+.pp-inner hr{
+	color: #E8E8E8;
+	border: none;
+	background-color: #E8E8E8;
+	height: 1px;
+	margin-top: 4rem;
+	margin-bottom: 4rem;
+}
+.pp-inner address p{
+	margin: 0.35rem 0;
+}
+.pp-inner address{
+	padding: 1rem 2rem;
+	background: #F8F8F8;
+	border-radius: 0.25rem;
+}

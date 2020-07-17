@@ -24,17 +24,22 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-airline:before {
   content: "\e900";
+  
 }
 .icon-airport:before {
   content: "\e901";
+  
 }
 .icon-camera:before {
   content: "\e902";
+  
 }
 .icon-close:before {
   content: "\e903";
+  
 }
 .icon-get-started:before {
   content: "\e904";
@@ -42,6 +47,7 @@
 }
 .icon-log-in:before {
   content: "\e906";
+  
 }
 .icon-message:before {
   content: "\e907";
@@ -49,7 +55,13 @@
 }
 .icon-package:before {
   content: "\e908";
+  
+}
+.icon-cookies:before {
+  content: "\e909";
+  color: #f78334;
 }
 .icon-globe:before {
   content: "\e905";
+  
 }
