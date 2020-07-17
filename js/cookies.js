@@ -8,7 +8,7 @@ if(Cookies.get('cookies-atention')!=='show'){
 	setTimeout(cookiesAtention, 1000);
 }
 	function cookiesAtention(){
-		document.querySelector('.cookies-outer').innerHTML = ('<div class="cookies"><div class="cookies-inner"><div class="cookie-img c-c icon"><span class="icon-cookies"></span></div><p class="cookies-text">We use cookies to deliver personalized services. By using this site, you agree to the use of cookies as per our <a href="../pp.html" class="inline-link">Privacy рolicy</a>.</p>		<button class="solid-small cookies-accept">Accept</button></div></div>')
+		document.querySelector('.cookies-outer').innerHTML = ('<div class="cookies"><div class="cookies-inner"><div class="cookie-img c-c icon"><span class="icon-cookies"></span></div><p class="cookies-text">We use cookies to deliver personalized services. By using this site, you agree to the use of cookies as per our <a href="./pp.html" class="inline-link">Privacy рolicy</a>.</p>		<button class="solid-small cookies-accept">Accept</button></div></div>')
 		setTimeout(function() {
 			document.querySelector('.cookies').classList.add('cookies-show')
 		}, 1000);
