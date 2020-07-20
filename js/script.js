@@ -1,3 +1,5 @@
+document.body.classList.remove('loading')
+
 function getScrollbarWidth() {
   const outer = document.createElement('div');
   outer.style.visibility = 'hidden';
